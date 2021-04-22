@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProyectoGUI
 {
-    public partial class Form1 : Form
+    public partial class CuadroServicios : UserControl
     {
-        public Form1()
+        public CuadroServicios()
         {
             InitializeComponent();
+        }
+
+        private void CuadroInicio_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
