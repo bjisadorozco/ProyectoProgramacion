@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL
+namespace Entity
 {
-    public class Class1
+    class Cliente: Persona
     {
     }
 }
