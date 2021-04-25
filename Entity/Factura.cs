@@ -8,14 +8,14 @@ namespace Entity
 {
    public class Factura
     {
-        public DateTime Fecha { get; set; }
+         public DateTime Fecha { get; set; }
         public Double Total { get; set; }
-        //public Persona Cliente { get; set; }
+        public Persona Cliente { get; set; }
         public String CodigoFactura { get; set; }
         public Double SubTotal { get; set; }
         public Double TotalDescuento { get; set; }
         public Double IVATotal { get; set; }
-        /*
+        
         public List<DetalleFactura> Detalles { get; set; }
 
         public void AgregarDetalle(Producto producto, int Cantidad)
@@ -62,6 +62,6 @@ namespace Entity
 
         
 
-        */
+        
     }
 }

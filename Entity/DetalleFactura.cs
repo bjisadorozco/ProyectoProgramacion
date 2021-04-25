@@ -10,8 +10,8 @@ namespace Entity
     {
         public string CodigoDetalleFactura { get; set; }
         public int Cantidad { get; set; }
-        public Factura Factura { get; set }
-        public Servicio Servicio { get; set }
+        public Factura Factura { get; set; }
+        public Servicio Servicio { get; set; }
         public double PorcentajeIVA { get; set; }
         public double PorcentajeDescuento { get; set; }
         public Producto Producto { get; set; }
