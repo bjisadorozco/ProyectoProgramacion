@@ -11,33 +11,31 @@ namespace ComprobarCalculos
     {
         static void Main(string[] args)
         {
-
             Cliente cliente = new Cliente
             {
-                Nombre = 'brayan',
+                Nombre = "Brayan",
 
             };
             Factura factura = new Factura()
             {
-                CodigoFactura = 1,
-                cliente = cliente,
-                idCliente = cliente.identificacion,
-
+                CodigoFactura = "ABC",
+                Cliente = cliente,
+                IdCliente = cliente.Identificacion,
             };
 
             Producto producto = new Producto()
             {
-                IdProducto = '1',
-                Descripcion = "chanclas boconas",
+                Codigo = "123",
+                Descripcion = "crema",
                 Descuento = 5,
-                IVA = 16,
-                Existencia = 20,
+                PorcentajeIVA = 16,
                 PrecioUnitario = 100,
             };
-
-            DetalleFactura detalleFactura = new DetalleFactura(producto, 5);
-            factura.AgregarDetalle(detalleFactura);
-            factura2.AgregarDetalle(detalleFactura);
+            factura.AgregarDetalle(producto, 5);
+            Console.WriteLine("imprimir");
+            Console.WriteLine(cliente.Nombre);
+            Console.WriteLine(factura.Total);
+            Console.ReadKey();
         }
     }
 }

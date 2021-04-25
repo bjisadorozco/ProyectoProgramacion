@@ -11,19 +11,24 @@ namespace Entity
          public DateTime Fecha { get; set; }
         public Double Total { get; set; }
         public Persona Cliente { get; set; }
+        public String IdCliente { get; set; }
         public String CodigoFactura { get; set; }
         public Double SubTotal { get; set; }
         public Double TotalDescuento { get; set; }
         public Double IVATotal { get; set; }
-        
+        public Factura()
+        {
+            Detalles = new List<DetalleFactura>();
+        }
+
         public List<DetalleFactura> Detalles { get; set; }
 
-        public void AgregarDetalle(Producto producto, int Cantidad)
+        public void AgregarDetalle(Producto producto, int cantidad)
         {
-            DetalleFactura detalle = new DetalleFactura(producto, Cantidad);
+            DetalleFactura detalle = new DetalleFactura(producto, cantidad);
             Detalles.Add(detalle);
         }
-        
+
         public void CalcularSubTotal()
         {
             SubTotal = 0;
