@@ -24,7 +24,7 @@ namespace Entity
         public DetalleFactura(Producto producto,  int cantidad)
         {
             Producto = producto;
-            PrecioUnitario = producto.PrecioVenta;
+            PrecioUnitario = producto.PrecioUnitario;
             PorcentajeDescuento = producto.Descuento;
             PorcentajeIVA = producto.PorcentajeIVA;
             Cantidad = cantidad;

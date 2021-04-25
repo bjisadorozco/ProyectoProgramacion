@@ -26,7 +26,7 @@ namespace ComprobarCalculos
             Producto producto = new Producto()
             {
                 Codigo = "123",
-                Descripcion = "crema",
+                Nombre = "crema",
                 Descuento = 5,
                 PorcentajeIVA = 16,
                 PrecioUnitario = 100,

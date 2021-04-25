@@ -14,6 +14,6 @@ namespace Entity
             public Boolean Acompañante { get; set; }
             public Double Descuento { get; set; }
             public String Codigo { get; set; }
-        }
+        
     }
 }
