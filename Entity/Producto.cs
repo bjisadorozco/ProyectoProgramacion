@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Producto
+    public class Producto
     {
         public String Codigo { get; set; }
         public String Nombre { get; set; }

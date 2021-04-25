@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Barbero: Persona
+   public class Barbero: Persona
     {
     }
 }
