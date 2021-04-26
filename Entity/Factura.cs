@@ -27,6 +27,7 @@ namespace Entity
         {
             DetalleFactura detalle = new DetalleFactura(producto, cantidad);
             Detalles.Add(detalle);
+            calcular();
         }
 
         public void CalcularSubTotal()
@@ -62,6 +63,13 @@ namespace Entity
             Total = SubTotal - TotalDescuento + IVATotal;
         }
 
+        public void calcular()
+        {
+            CalcularSubTotal();
+            CalcularTotalDescuento();
+            CalcularTotalIVA();
+            CalcularTotal();
+        }
 
 
 

@@ -39,6 +39,7 @@ namespace ProyectoGUI
             
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
             Sidepanel.Height = button2.Height;
