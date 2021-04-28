@@ -39,11 +39,8 @@ namespace ProyectoGUI
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
             this.BtnMaximizar = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.BtnCerrar = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.BtnMinimizar = new System.Windows.Forms.Button();
             this.BtnMinimizar2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -101,6 +98,7 @@ namespace ProyectoGUI
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(177, 54);
             this.button5.TabIndex = 7;
+            this.button5.Text = "PAGAR";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -163,32 +161,16 @@ namespace ProyectoGUI
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.panel2.Controls.Add(this.button11);
             this.panel2.Controls.Add(this.BtnMaximizar);
-            this.panel2.Controls.Add(this.button12);
             this.panel2.Controls.Add(this.BtnCerrar);
-            this.panel2.Controls.Add(this.button10);
             this.panel2.Controls.Add(this.BtnMinimizar);
             this.panel2.Controls.Add(this.BtnMinimizar2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(181, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(719, 43);
+            this.panel2.Size = new System.Drawing.Size(876, 43);
             this.panel2.TabIndex = 1;
-            // 
-            // button11
-            // 
-            this.button11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.Control;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(342, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(32, 29);
-            this.button11.TabIndex = 10;
-            this.button11.UseVisualStyleBackColor = true;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // BtnMaximizar
             // 
@@ -196,26 +178,11 @@ namespace ProyectoGUI
             this.BtnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMaximizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.BtnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnMaximizar.Image")));
-            this.BtnMaximizar.Location = new System.Drawing.Point(653, 4);
+            this.BtnMaximizar.Location = new System.Drawing.Point(810, 4);
             this.BtnMaximizar.Name = "BtnMaximizar";
             this.BtnMaximizar.Size = new System.Drawing.Size(34, 26);
             this.BtnMaximizar.TabIndex = 14;
             this.BtnMaximizar.UseVisualStyleBackColor = true;
-            this.BtnMaximizar.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button12
-            // 
-            this.button12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.SystemColors.Control;
-            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.Location = new System.Drawing.Point(371, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(32, 29);
-            this.button12.TabIndex = 11;
-            this.button12.UseVisualStyleBackColor = true;
             // 
             // BtnCerrar
             // 
@@ -225,26 +192,12 @@ namespace ProyectoGUI
             this.BtnCerrar.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCerrar.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCerrar.Image")));
-            this.BtnCerrar.Location = new System.Drawing.Point(684, 3);
+            this.BtnCerrar.Location = new System.Drawing.Point(841, 3);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(32, 29);
             this.BtnCerrar.TabIndex = 8;
             this.BtnCerrar.UseVisualStyleBackColor = true;
             this.BtnCerrar.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button10
-            // 
-            this.button10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.Control;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(400, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(32, 29);
-            this.button10.TabIndex = 9;
-            this.button10.UseVisualStyleBackColor = true;
             // 
             // BtnMinimizar
             // 
@@ -252,7 +205,7 @@ namespace ProyectoGUI
             this.BtnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMinimizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.BtnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimizar.Image")));
-            this.BtnMinimizar.Location = new System.Drawing.Point(624, 3);
+            this.BtnMinimizar.Location = new System.Drawing.Point(781, 3);
             this.BtnMinimizar.Name = "BtnMinimizar";
             this.BtnMinimizar.Size = new System.Drawing.Size(32, 28);
             this.BtnMinimizar.TabIndex = 13;
@@ -265,12 +218,11 @@ namespace ProyectoGUI
             this.BtnMinimizar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMinimizar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.BtnMinimizar2.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimizar2.Image")));
-            this.BtnMinimizar2.Location = new System.Drawing.Point(653, 4);
+            this.BtnMinimizar2.Location = new System.Drawing.Point(810, 4);
             this.BtnMinimizar2.Name = "BtnMinimizar2";
             this.BtnMinimizar2.Size = new System.Drawing.Size(34, 26);
             this.BtnMinimizar2.TabIndex = 15;
             this.BtnMinimizar2.UseVisualStyleBackColor = true;
-            this.BtnMinimizar2.Click += new System.EventHandler(this.BtnMinimizar2_Click);
             // 
             // panel3
             // 
@@ -297,7 +249,7 @@ namespace ProyectoGUI
             this.panelFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormularios.Location = new System.Drawing.Point(181, 43);
             this.panelFormularios.Name = "panelFormularios";
-            this.panelFormularios.Size = new System.Drawing.Size(719, 485);
+            this.panelFormularios.Size = new System.Drawing.Size(876, 485);
             this.panelFormularios.TabIndex = 12;
             // 
             // FormPrincipal
@@ -305,7 +257,7 @@ namespace ProyectoGUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(900, 528);
+            this.ClientSize = new System.Drawing.Size(1057, 528);
             this.Controls.Add(this.panelFormularios);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -339,9 +291,6 @@ namespace ProyectoGUI
         private System.Windows.Forms.Panel Sidepanel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BtnCerrar;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
         
         private System.Windows.Forms.Panel panelFormularios;
         private System.Windows.Forms.Button BtnMinimizar;

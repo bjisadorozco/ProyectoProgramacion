@@ -19,8 +19,13 @@ namespace ProyectoGUI
             Sidepanel.Height = button1.Height;
             Sidepanel.Top = button1.Top;
             AbrirFormulario<PrimerCuadro>();
-            //new PrimerCuadro().Show();
+          
         }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -50,7 +55,6 @@ namespace ProyectoGUI
             Sidepanel.Top = button2.Top;
             AbrirFormulario<SegundoCuadro>();
 
-            //new SegundoCuadro().Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -81,7 +85,7 @@ namespace ProyectoGUI
             Sidepanel.Top = button5.Top;
             AbrirFormulario<QuintoCuadro>();
 
-            //new QuintoCuadro().Show();
+            
         }
 
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()
@@ -112,9 +116,10 @@ namespace ProyectoGUI
             WindowState = FormWindowState.Minimized;
 
         }
+       /* 
         int lx, ly;
         int sw, sh;
-        
+       
         private void button14_Click(object sender, EventArgs e)
         {
             lx = this.Location.X;
@@ -126,11 +131,12 @@ namespace ProyectoGUI
             
            
             BtnMaximizar.Visible = false;
-            BtnMinimizar2.Visible = true;
+            BtnMinimizar2.Visible = false;
             
         
 
         }
+        
 
         private void BtnMinimizar2_Click(object sender, EventArgs e)
         {
@@ -139,12 +145,15 @@ namespace ProyectoGUI
             WindowState = FormWindowState.Normal;
             
             BtnMinimizar2.Visible = false;
-            BtnMaximizar.Visible = true;
+            BtnMaximizar.Visible = false;
         }
-        
+       */
 
-
-        
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
 
         private Form activeForm = null;
         private void OpenPanelFormularios(Form PanelFormularios)

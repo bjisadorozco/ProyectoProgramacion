@@ -55,7 +55,27 @@ namespace ProyectoGUI
                 MessageBox.Show(response.Message);
             }
         }
-        
-       
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+          
+            if (DtgDatosPersona.SelectedRows.Count > 0)
+            {
+
+                clienteService.Eliminar(DtgDatosPersona.CurrentRow.Cells[0].Value.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila para editar.");
+            }
+            mostrar();
+
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

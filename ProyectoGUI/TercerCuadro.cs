@@ -56,5 +56,20 @@ namespace ProyectoGUI
                 }
             
         }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            if (DtgDatosProductos.SelectedRows.Count > 0)
+            {
+
+                productoService.Eliminar(DtgDatosProductos.CurrentRow.Cells[0].Value.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila para editar.");
+            }
+            Agregar();
+
+        }
     }
 }

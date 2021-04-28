@@ -29,7 +29,7 @@ namespace ProyectoGUI
                 Nombre = TxtNombre.Text,
                 Codigo = TxtCodigo.Text,
                 Precio = double.Parse(TxtPrecio.Text),
-                Acompañante = CmbAcompañante.Text, 
+                Acompañante =  CmbAcompañante.SelectedItem.ToString(), 
                 Descuento= double.Parse(TxtDescuento.Text),
 
 
@@ -55,6 +55,22 @@ namespace ProyectoGUI
 
         private void CmbAcompañante_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            if (DtgDatosServicios.SelectedRows.Count > 0)
+            {
+
+                servicioService.Eliminar(DtgDatosServicios.CurrentRow.Cells[0].Value.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila para editar.");
+            }
+            Agregar();
+            
 
         }
     }
