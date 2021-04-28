@@ -57,11 +57,11 @@ namespace DAL
             string[] matrizServicio = linea.Split(delimiter);
             if (matrizServicio[3] == "Si")
             {
-                servicio = new Servicio(matrizServicio[0], matrizServicio[1], double.Parse(matrizServicio[2]), matrizServicio[3], double.Parse(matrizServicio[4]));
+                servicio = new Servicio(matrizServicio[0], matrizServicio[1], double.Parse(matrizServicio[2]), true, double.Parse(matrizServicio[4]));
             }
             else
             {
-                servicio = new Servicio(matrizServicio[0], matrizServicio[1], double.Parse(matrizServicio[2]), matrizServicio[3], double.Parse(matrizServicio[4]));
+                servicio = new Servicio(matrizServicio[0], matrizServicio[1], double.Parse(matrizServicio[2]), false, double.Parse(matrizServicio[4]));
             }
 
             return servicio;
