@@ -11,14 +11,14 @@ namespace ComprobarCalculos
     {
         static void Main(string[] args)
         {
-            Cliente cliente = new Cliente
+            Cliente cliente = new Cliente()
             {
                 Nombre = "Brayan",
 
             };
             Factura factura = new Factura()
             {
-                CodigoFactura = "ABC",
+                IdFactura = "ABC",
                 Cliente = cliente,
                 IdCliente = cliente.Identificacion,
                

@@ -8,11 +8,13 @@ namespace Entity
 {
    public class Factura
     {
-         public DateTime Fecha { get; set; }
+        public DateTime Fecha { get; set; }
         public Double Total { get; set; }
         public Persona Cliente { get; set; }
         public String IdCliente { get; set; }
-        public String CodigoFactura { get; set; }
+        public Producto Producto { get; set; }
+        public String IdProducto { get; set; }
+        public String IdFactura { get; set; }
         public Double SubTotal { get; set; }
         public Double TotalDescuento { get; set; }
         public Double IVATotal { get; set; }
@@ -20,6 +22,11 @@ namespace Entity
         {
             Detalles = new List<DetalleFactura>();
         }
+        /*public Factura(string idFactura, string idCliente, string idProducto, DateTime fecha, double subtotal, double ivaTotal, double totalDescuento, double total)
+        {
+            IdFactura = idFactura;
+            IdCliente = idCliente;
+        }*/
 
         public List<DetalleFactura> Detalles { get; set; }
 
