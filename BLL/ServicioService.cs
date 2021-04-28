@@ -85,18 +85,18 @@ namespace BLL
             public List<Servicio> Servicios { get; set; }
             public string Message { get; set; }
             public bool Error { get; set; }
-            public bool PacienteEncontrado { get; set; }
+            public bool ServicioEncontrado { get; set; }
             public ServicioConsultaResponse(string message)
             {
                 Error = true;
                 Message = message;
-                PacienteEncontrado = false;
+                ServicioEncontrado = false;
             }
             public ServicioConsultaResponse(List<Servicio> servicios)
             {
                 Servicios = servicios;
                 Error = false;
-                PacienteEncontrado = true;
+                ServicioEncontrado = true;
             }
         }
     }

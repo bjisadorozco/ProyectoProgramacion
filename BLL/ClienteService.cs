@@ -84,18 +84,18 @@ namespace BLL
             public List<Cliente> Clientes { get; set; }
             public string Message { get; set; }
             public bool Error { get; set; }
-            public bool PacienteEncontrado { get; set; }
+            public bool ClienteEncontrado { get; set; }
             public ClienteConsultaResponse(string message)
             {
                 Error = true;
                 Message = message;
-                PacienteEncontrado = false;
+                ClienteEncontrado = false;
             }
             public ClienteConsultaResponse(List<Cliente> clientes)
             {
                 Clientes = clientes;
                 Error = false;
-                PacienteEncontrado = true;
+                ClienteEncontrado = true;
             }
         }
     }

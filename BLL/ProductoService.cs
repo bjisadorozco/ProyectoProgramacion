@@ -85,18 +85,18 @@ namespace BLL
             public List<Producto> Productos { get; set; }
             public string Message { get; set; }
             public bool Error { get; set; }
-            public bool PacienteEncontrado { get; set; }
+            public bool ProductoEncontrado { get; set; }
             public ProductoConsultaResponse(string message)
             {
                 Error = true;
                 Message = message;
-                PacienteEncontrado = false;
+                ProductoEncontrado = false;
             }
             public ProductoConsultaResponse(List<Producto> productos)
             {
                 Productos = productos;
                 Error = false;
-                PacienteEncontrado = true;
+                ProductoEncontrado = true;
             }
         }
     }
