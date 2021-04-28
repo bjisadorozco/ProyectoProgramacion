@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoGUI
 {
-    public partial class PrimerCuadro : UserControl
+    public partial class PrimerCuadro : Form
     {
         public PrimerCuadro()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

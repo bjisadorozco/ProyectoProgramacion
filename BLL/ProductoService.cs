@@ -8,7 +8,7 @@ using DAL;
 
 namespace BLL
 {
-    class ProductoService
+     public class ProductoService
     {
         private ProductoRepository productoRepository;
         public ProductoService()

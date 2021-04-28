@@ -7,7 +7,7 @@ using Entity;
 using DAL;
 namespace BLL
 {
-    class ClienteService
+   public  class ClienteService
     {
         private ClienteRepository clienteRepository;
         public ClienteService()

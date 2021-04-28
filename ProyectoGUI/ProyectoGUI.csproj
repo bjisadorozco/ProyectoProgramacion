@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CuadroServicios.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="CuartoCuadro.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CuadroServicios.Designer.cs">
-      <DependentUpon>CuadroServicios.cs</DependentUpon>
+    <Compile Include="CuartoCuadro.Designer.cs">
+      <DependentUpon>CuartoCuadro.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -59,21 +59,33 @@
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="PrimerCuadro.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="PrimerCuadro.Designer.cs">
       <DependentUpon>PrimerCuadro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuintoCuadro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuintoCuadro.Designer.cs">
+      <DependentUpon>QuintoCuadro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SegundoCuadro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SegundoCuadro.Designer.cs">
+      <DependentUpon>SegundoCuadro.cs</DependentUpon>
+    </Compile>
     <Compile Include="TercerCuadro.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="TercerCuadro.Designer.cs">
       <DependentUpon>TercerCuadro.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CuadroServicios.resx">
-      <DependentUpon>CuadroServicios.cs</DependentUpon>
+    <EmbeddedResource Include="CuartoCuadro.resx">
+      <DependentUpon>CuartoCuadro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
@@ -90,6 +102,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SegundoCuadro.resx">
+      <DependentUpon>SegundoCuadro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TercerCuadro.resx">
       <DependentUpon>TercerCuadro.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +122,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{c822877f-00ce-4f45-b3b4-1d1e1b5e6e91}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{1476d486-4eb6-4501-9fed-88acef2bc3cf}</Project>
       <Name>Entity</Name>

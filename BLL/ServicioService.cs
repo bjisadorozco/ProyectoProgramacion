@@ -8,7 +8,7 @@ using DAL;
 
 namespace BLL
 {
-    class ServicioService
+   public class ServicioService
     {
         private ServicioRepository servicioRepository;
         public ServicioService()

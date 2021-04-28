@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoGUI
 {
-    public partial class CuadroServicios : UserControl
+    public partial class QuintoCuadro : Form
     {
-        public CuadroServicios()
+        public QuintoCuadro()
         {
             InitializeComponent();
-        }
-
-        private void CuadroInicio_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }
