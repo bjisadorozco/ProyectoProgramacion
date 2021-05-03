@@ -122,10 +122,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{c822877f-00ce-4f45-b3b4-1d1e1b5e6e91}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{1476d486-4eb6-4501-9fed-88acef2bc3cf}</Project>
       <Name>Entity</Name>

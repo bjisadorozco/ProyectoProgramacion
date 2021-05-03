@@ -6,25 +6,18 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class Servicio
-    {
-        public string Nombre { get; set; }
-        public double Precio { get; set; }
-        public string Acompañante { get; set; }
-        public double Descuento { get; set; }
-        public string Codigo { get; set; }
-       
+    public class Servicio: ProductoServicio
+    {  
         public Servicio()
         {
 
         }
-        public Servicio(string nombre, string codigo, double precio, string acompañante, double descuento)
+        public Servicio(string nombre, string codigo, double precio, int existencias)
         {
             Nombre = nombre;
             Codigo = codigo;
             Precio = precio;
-            Acompañante = acompañante;
-            Descuento = descuento;
+            Existencias = existencias;
         }
     }
 }

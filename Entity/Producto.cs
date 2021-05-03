@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class Producto
+    public class Producto: ProductoServicio
     {
-        public String Codigo { get; set; }
-        public String Nombre { get; set; }
-        public double PrecioUnitario { get; set; }
-        public int Cantidad { get; set; }
-        public int Existencias { get; set; }
+        public DateTime Fecha { get; set; }
         public double Descuento { get; set; }
         public double PorcentajeIVA { get; set; }
 
@@ -22,8 +18,7 @@ namespace Entity
         {
             Nombre = nombre;
             Codigo = codigo;
-            PrecioUnitario = precioUnitario;
-            Cantidad = cantidad;
+            Precio = precioUnitario;
             Existencias = existencias;
             Descuento = descuento;
             PorcentajeIVA = porcentajeIva;
